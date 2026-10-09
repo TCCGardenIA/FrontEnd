@@ -64,7 +64,7 @@ export default function Home() {
                         <CardDev nome="Caique" github="https://github.com/Caique-Batista" linkedin="https://www.linkedin.com/in/caique-batista/" imagem="../imgs/caique.jfif" />
                         <CardDev nome="Guilherme" github="http://www.github.com/guilherme-tiossi" linkedin="https://www.linkedin.com/in/guilherme-tiossi-31879124a/pt?originalSubdomain=br" imagem="../imgs/guilherme.jfif" />
                         <CardDev nome="Eduardo" github="" linkedin="https://www.linkedin.com/in/carlos-eduardo-gutierrez-michimoto?utm_source=share_via&utm_content=profile&utm_medium=member_ios" imagem="../imgs/eduardo.jfif" />
-                        <CardDev nome="Edgard" github="" linkedin="" imagem="../imgs/usuario.png" />
+                        <CardDev nome="Edgard" github="" linkedin="https://www.linkedin.com/in/edgard-augusto-5b6334212?utm_source=share_via&utm_content=profile&utm_medium=member_android" imagem="../imgs/edgard.jfif" />
                     </div>
 
                 </div>

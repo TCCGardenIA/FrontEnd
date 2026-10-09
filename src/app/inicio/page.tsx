@@ -8,37 +8,17 @@ import {
   Wind, 
   CheckCircle2, 
   LogOut, 
-  Sprout 
+  Sprout
 } from "lucide-react"; // Se não usar lucide-react, pode trocar por SVGs locais
 import styles from "./style.module.css";
+import Menu from "@/components/menu/menu";
 
 export default function Inicio() {
   return (
     <div className={styles.container}>
-      {/* Barra Lateral / Sidebar */}
-      <aside className={styles.sidebar}>
-        <div className={styles.logoArea}>
-          <span className={styles.brandTitle}>
-            GARDEN<span>IA</span>
-          </span>
-        </div>
-
-        <nav className={styles.navigation}>
-          <Link href="/inicio" className={`${styles.navItem} ${styles.active}`}>
-            Início
-          </Link>
-          <Link href="/historico" className={styles.navItem}>
-            Histórico
-          </Link>
-        </nav>
-
-        <div className={styles.logoutArea}>
-          <button className={styles.logoutBtn} aria-label="Sair">
-            <LogOut size={24} />
-          </button>
-        </div>
-      </aside>
-
+      <Menu
+       paginaAtiva="inicio" 
+      />
       {/* Conteúdo Principal */}
       <main className={styles.mainContent}>
         {/* Topo / Header */}
@@ -66,7 +46,7 @@ export default function Inicio() {
                 <h2 className={styles.recommendationTitle}>Aguarde para regar!</h2>
 
                 <div className={styles.moistureGrid}>
-                  {[1, 2, 3, 4].map((sensor) => (
+                  {[1, 2].map((sensor) => (
                     <div key={sensor} className={styles.sensorItem}>
                       <div className={styles.sensorValue}>
                         <Sprout size={18} />

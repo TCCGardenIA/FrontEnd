@@ -22,9 +22,6 @@ const Login = () => {
                     src="/imgs/Logo02.svg"
                     alt="Logo GardenIA"
                 />
-
-                <h1>Login</h1>
-
                 <form className={styles.campos} onSubmit={valiadarLogin}>
                     <div className={styles.campoEmail}>
                         <label htmlFor="email">Email</label>

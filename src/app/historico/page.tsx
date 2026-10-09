@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, LogOut, Sprout } from "lucide-react";
 import styles from "./style.module.css";
+import Menu from "@/components/menu/menu";
 
 type StatusType = "regado" | "nao-precisou" | "recomendado-nao-regado" | "sem-dados";
 
@@ -68,28 +69,9 @@ export default function Historico() {
   return (
     <div className={styles.container}>
       {/* Sidebar Lateral */}
-      <aside className={styles.sidebar}>
-        <div className={styles.logoArea}>
-          <span className={styles.brandTitle}>
-            GARDEN<span>IA</span>
-          </span>
-        </div>
-
-        <nav className={styles.navigation}>
-          <Link href="/inicio" className={styles.navItem}>
-            Início
-          </Link>
-          <Link href="/historico" className={`${styles.navItem} ${styles.active}`}>
-            Histórico
-          </Link>
-        </nav>
-
-        <div className={styles.logoutArea}>
-          <button className={styles.logoutBtn} aria-label="Sair">
-            <LogOut size={24} />
-          </button>
-        </div>
-      </aside>
+     <Menu
+      paginaAtiva="historico"
+     />
 
       {/* Conteúdo Central */}
       <main className={styles.mainContent}>
